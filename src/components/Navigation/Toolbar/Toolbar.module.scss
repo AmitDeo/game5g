@@ -1,0 +1,107 @@
+.Toolbar {
+	margin-bottom: 5px;
+	position: relative;
+	display: flex;
+
+	@media only screen and (max-width: 767px)
+	{
+		margin-bottom: 0px;
+	}
+
+	.Stats
+	{
+	  width: 100%;
+	  box-sizing: border-box;
+	  max-width: 309px;
+	  border-radius: 23px;
+	  box-shadow: inset -2px 2px 8px 0 rgba(27,47,129,0.58);
+	  padding: 5px 25px;
+	  margin: 0px auto;
+
+	  	flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		display: flex;
+
+		@media only screen and (max-width: 767px)
+		{
+			max-width: 75%;
+			padding: 5px 15px;
+			margin-left: 15px;
+			flex-grow: 1;
+		}
+
+		> div
+		{
+			 
+		  color: #FFFFFF;
+		  font-family: "Qualcomm-Semibold";
+		  font-size: 20px;
+		  font-weight: 500;
+		  letter-spacing: 0;
+		  line-height: 26px;
+		  text-align: center;
+		  flex-grow: 1;
+
+		  &.Timer
+		  {
+		  	flex-grow: 0;
+		  	width: 55px;
+		  }
+
+			span
+			{
+				  color: #B0C7FF;
+				  font-family: "Qualcomm-Regular";
+				  font-size: 11px;
+				  letter-spacing: 0;
+				  line-height: 16px;
+				  text-align: center;
+				  display: block;
+
+			}
+		}
+
+		.Timer
+		{
+
+		}
+
+		.Moves
+		{
+
+		}
+
+		.Mode
+		{
+
+		}
+	}
+
+	.Refresh
+	{
+		a
+		{
+			top: 15px;
+			display: block;
+			position: absolute;
+			width: 21px;
+			height: 20px;
+			background: url('../../../assets/images/ic_refresh.png') 0 0 no-repeat transparent; 
+			right: 15px;
+			top: 5px;
+			text-indent: -9999px;
+			
+			@media only screen and (max-width: 767px)
+			{
+				right: 0px;
+    			top: 12px;
+    		}
+		}
+	}
+}
+
+@media (max-width: 499px){
+	
+}

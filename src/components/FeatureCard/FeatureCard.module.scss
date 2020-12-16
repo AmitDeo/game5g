@@ -1,0 +1,106 @@
+.DropBox
+{
+	position: relative;
+	overflow: hidden;
+	transform: scale(0);
+
+	&.Appear
+	{
+		animation: growfast 250ms ease-out forwards;
+	}
+	
+	&.Diminish
+	{
+		animation: diminishBack 250ms ease-out forwards;
+	}
+
+	.SqueezeClass
+	{
+		margin-left: 20% !important;
+		height: 375px  !important;
+		overflow: hidden;
+		animation: moveTopRight 0.5s ease-out forwards;
+    	transform-origin: top right;
+
+    	@media all and (max-device-height: 668px)
+    	{
+    		height: 300px !important;
+    	}
+	}
+}
+
+.FeatureMainScreen
+{
+	min-height: 545px;
+
+	@media only screen and (max-width: 767px)
+	{
+		min-height: 440px;
+	}	
+
+	@media all and (max-device-height: 668px)
+	{
+		min-height: 375px;
+	}
+
+	@media only screen and (min-width: 768px) and (max-height: 900px)
+	{
+		min-height: 440px;
+	}
+
+	&.IOSDevice
+	{
+		@media all and (max-device-height: 900px)
+		{
+			min-height: 450px;
+		}
+
+		@media all and (max-device-height: 700px)
+		{
+			min-height: 375px;
+		}
+
+		@media all and (max-device-height: 600px)
+		{
+			min-height: 375px;
+		}
+
+	}	
+}
+
+@keyframes moveTopRight {
+    0% {
+        transform: scale(1); //translate(0%, 0%);
+    }
+
+    100% {
+        transform: scale(0.9); //translate(20%, -20%);
+    }
+}
+
+@keyframes growfast
+{
+	0%
+	{
+		transform: scale(0);
+	}
+
+	100%
+	{
+		transform: scale(1);
+	}
+}
+
+
+@keyframes diminishBack
+{
+	0%
+	{
+		transform: scale(1);
+	}
+
+	100%
+	{
+		transform: scale(0);
+	}
+}

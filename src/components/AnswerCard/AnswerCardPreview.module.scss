@@ -1,0 +1,25 @@
+.DraggedCard
+{
+	height: 76px;
+	width: 93px;
+	border-radius: 4px;
+	background-color: #7BA0FF;
+	box-shadow: 0 12px 50px -15px rgba(0,0,0,0.58);
+	flex-grow: 1;
+	padding: 10px;
+	color: #3253DC;
+
+
+	span
+	{
+		  	  font-family: "Qualcomm-Semibold";
+		  	  font-size: 20px;
+			  font-weight: 500;
+			  letter-spacing: 0;
+			  line-height: 20px;
+			  text-align: center;
+			  display: block;
+			  margin-top: 20px;
+	}
+	
+}

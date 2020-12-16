@@ -1,0 +1,187 @@
+.AdvancedQuestion
+{
+	.AdvTitle
+	{
+		h3
+		{
+	      color: #FFFFFF;
+		  font-family: "Qualcomm-Semibold";
+		  font-size: 44px;
+		  font-weight: 500;
+		  letter-spacing: 0;
+		  line-height: 50px;
+		  text-align: center;
+		  margin-bottom: 10px;
+		  text-transform: uppercase;
+		}
+
+		h4
+		{
+			  color: #FFFFFF;
+			  font-family: "Qualcomm-Semibold";
+			  font-size: 15px;
+			  font-weight: 500;
+			  letter-spacing: 1.36px;
+			  line-height: 24px;
+			  text-align: center;
+			  margin: 0px 0px 40px;
+			  text-transform: uppercase;
+		}
+	}
+
+	ul
+	{
+		margin: 0px;
+		padding: 0px;
+
+		li
+		{
+			list-style: none;
+			border-radius: 27.5px;
+  			background-color: #4AB7CA;
+  			color: #FFF;
+  			padding: 15px;
+  			width: auto;
+  			text-align: center;
+  			position: relative;
+  			display: block;
+  			margin-bottom: 30px;
+  			cursor: pointer;
+  			transition: background-color 200ms ease;
+  			position: relative;
+
+  			&:hover
+  			{
+  				background-color: #6EC5D5;
+  			}
+
+  			span
+  			{
+  				height: 0px;
+  				width: 0px;
+  			}
+
+  			&.RightAnswer
+  			{
+  				border: 8px solid #8BD1DD;
+  				border-radius: 37.5px;
+  				animation: flashing 1000ms 2 ease-out;
+
+  				@keyframes flashing
+  				{
+  					from {  border: 8px solid rgba(139,209, 201, 0.5); background: rgba(74, 183, 202, 0.5); }
+  					to {  border: 8px solid rgba(139,209, 201, 1); background: rgba(74, 183, 202, 1); }
+  				}
+
+  				span
+  				{
+  					position: absolute;
+  					width: 27px;
+  					height: 21px;
+  					display: block;
+  					background: url('../../assets/images/ic_check_correct.png') center center no-repeat transparent;	
+  					right: 25px;
+  					top: 20px;
+  				}
+
+  			}
+
+  			&.WrongAnswer
+  			{
+  				background: rgba(74,183, 202, 0.5) ;
+
+  				span
+  				{
+  					position: absolute;
+  					width: 22px;
+  					height: 22px;
+  					display: block;
+  					background: url('../../assets/images/ic_close.png') center center no-repeat transparent;	
+  					animation: bulgeinOut 1000ms ease-out forwards;
+  					right: 25px;
+  					top: 20px;
+  				}
+  			}
+
+  			&.NoIcon
+  			{
+  				span
+  				{
+  					display: none !important;
+  				}
+  			}
+
+  			@keyframes rotate {
+			  from { transform:rotate(0deg);}
+			  to { transform:rotate(360deg);}
+			}
+
+			@keyframes bulgeinOut {
+			  0%
+			  {
+			  	transform: scale(0);
+			  }
+
+			  50%
+			  {
+			  	transform: scale(0.3);
+			  }
+
+			  75%
+			  {
+			  	transform: scale(1);
+			  }
+
+			  90%
+			  {
+			  	transform: scale(1.1);
+			  }
+
+			  100%
+			  {
+			  	transform: scale(1);
+			  }
+
+			}
+
+  			div
+  			{
+  			  color: #FFFFFF;
+			  font-family: "Qualcomm-Regular";
+			  font-size: 26px;
+			  font-weight: 500;
+			  letter-spacing: 0;
+			  line-height: 32px;
+			  text-align: center;
+			  display: inline-block;
+			  margin: 0px auto;
+
+			  p
+			  {
+			  	color: #FFFFFF;
+				  font-family: "Qualcomm-Regular";
+				  font-size: 26px;
+				  font-weight: 500;
+				  letter-spacing: 0;
+				  line-height: 32px;
+				  margin: 0px;
+			  }
+
+  			}
+
+
+			input
+			{
+
+				  height: 19px;
+				  width: 16px;
+				  border: 1px solid #42909D;
+				  border-radius: 2px;
+				  background-color: #8BD1DD;
+				  position: absolute;
+				  top: 17px;
+				  left: 35px;
+			}
+		}
+	}
+}

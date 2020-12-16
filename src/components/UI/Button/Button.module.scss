@@ -1,0 +1,111 @@
+.Button {
+  border-radius: 27.5px;
+  background-color: #4AB7CA;
+  padding: 15px 25px;
+  color: #FFFFFF;
+  font-family: "Qualcomm-Semibold";
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  cursor: pointer;
+  border: 0px solid #FFF;
+  margin: 0px auto;
+  transition: all 0.5s ease;
+  outline: none;
+  
+  @media only screen and (max-device-height: 668px)
+  {
+    font-size: 22px;
+    line-height: 22px;
+    padding: 10px 15px;
+    border-radius: 24px;
+  }
+
+  &:hover
+  {
+      background-color: #449daa;
+      opacity: 0.7;
+      outline: none;
+
+      @media only screen and (max-width: 767px)
+      {
+        background-color: #4AB7CA;
+        opacity: 1;
+      }
+  }
+
+  &.Play
+  {
+    max-width: 231px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    color: #292F32;
+    font-family: "Qualcomm-Regular";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 18px;
+    padding: 18px 25px 15px;
+    background: url('../../../assets/images/icon_play.png') left center no-repeat #FFFFFF;
+
+    &:hover
+    {
+        background-color: #EEE;
+        opacity: 0.7;
+    }
+  }
+
+  &.PulseBtn
+  {
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+
+    &:hover
+    {
+        -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+    }
+
+  }
+
+}
+
+@keyframes pulse 
+{
+  0%
+  {
+    background-color: #4AB7CA;
+  }
+
+  50%
+  {
+    background-color: #449daa;
+  }
+
+  100%
+  {
+    background-color: #4AB7CA;
+  }
+}
+
+.Button
+
+.Button:first-of-type {
+    
+}
+
+.Success {
+    
+}
+
+.Danger {
+    color: #944317;
+}
+
+.Button:disabled
+{
+    color: #CCC;
+    cursor: not-allowed;
+}

@@ -1,0 +1,156 @@
+.InstructionsScreen
+{
+	max-width: 600px;
+	border-radius: 12px;
+	background-color: #0B2742;
+	box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
+	margin: 0px auto;
+	padding: 40px 50px;
+	color: #FFF;
+	height: 700px;
+	position: relative;
+
+	&.IEScreen
+	{
+		box-shadow: 0 0 60px rgba(0,0,0,0.5);
+	}
+
+	@media only screen and (min-width: 768px) and (max-height: 900px)
+	{
+		padding: 40px 30px 30px;
+		box-sizing: border-box;
+		min-height: 0px;
+		height: auto;
+	}
+
+	@media only screen and (max-width: 767px)
+	{
+		box-shadow: none;
+		padding: 40px 30px 30px;
+		border-radius: 0px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.swipeFeatures
+	{
+		margin-bottom: 25px;
+
+		.swipeStep1
+		{
+			background: url('../../assets/images/step_1.png') center center no-repeat transparent;
+			height: 40px;
+			width: 100%;
+			max-width: 480px;
+			margin: 0px auto 23px;
+			text-indent: -9999px;
+		}
+
+
+		.swipeStep2
+		{
+			background: url('../../assets/images/step_2.png') center center no-repeat transparent;
+			height: 40px;
+			width: 100%;
+			max-width: 480px;
+			margin: 0px auto 23px;
+			text-indent: -9999px;
+		}
+	}
+
+	.swipeIllustrate
+	{
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		display: flex;
+
+		.swipeImg
+		{
+			flex-basis: 50%;
+			margin-right: 5%;
+
+			img
+			{
+				display: block;
+				margin: 0px auto;
+
+				@media only screen and (min-width: 768px) and (max-height: 900px)
+				{
+					max-height: 175px;
+				}
+
+				@media only screen and (max-device-height: 668px)
+				{
+					max-height: 100px;
+				}
+			}
+
+			@media only screen and (max-width: 767px)
+			{
+				max-height: 175px;
+			}
+
+		}
+
+		.swipeText
+		{
+			flex-basis: 45%;
+			color: #D8D8D8;
+			font-family: "Qualcomm-Regular";
+			font-size: 18px;
+			letter-spacing: 0;
+			line-height: 24px;
+		}
+	}
+
+	button
+	{
+		margin-top: 125px;
+
+		@media only screen and (min-width: 768px) and (max-height: 900px)
+		{
+			margin-top: 50px;
+			margin-bottom: 0px;
+		}
+
+		@media only screen and (max-width: 767px)
+		{
+			margin-top: 0px;
+			position: absolute;
+			bottom: 35px;
+			width: 300px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		@media only screen and (max-device-height: 668px)
+		{
+			bottom: 20px;
+		}
+	}
+
+}
+
+/*
+display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			align-content: stretch;
+
+			.Dot
+			{
+				border: 1px dotted #FFF;
+			}
+
+			.Number
+			{
+				
+			}
+			*/

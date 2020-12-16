@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.Loading
+{
+    max-width: 600px;
+    border-radius: 12px;
+    background-color: #3253DC;
+    margin: 0px auto;
+    padding: 40px 50px;
+    color: #FFF;
+    position: relative;
+    height: 500px;
+
+    span
+    {
+      display: block;
+      width: 300px;
+      height: 300px;
+      text-indent: -9999px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: url(./assets/images/loading3.gif) center center no-repeat transparent;
+      background-size: 300px;
+    }
+}

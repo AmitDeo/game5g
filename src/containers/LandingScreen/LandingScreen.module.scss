@@ -1,0 +1,276 @@
+.LandingDad
+{
+	header
+	{
+		position: fixed;
+		z-index: 9999;
+		padding: 0px 30px;
+
+		@media only screen and (min-width: 768px)
+		{
+			display: none !important;
+		}
+	}
+}
+
+.LandingScreen
+{
+	max-width: 600px;
+	border-radius: 12px;
+	background-color: #2D57E2;
+	box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
+	margin: 0px auto;
+	padding: 40px 50px;
+	color: #FFF;
+	min-height: 700px;
+
+	&.IEScreen
+	{
+		box-shadow: 0 0 60px rgba(0,0,0,0.5);
+	}
+	
+	@media only screen and (min-width: 768px) and (max-height: 900px)
+	{
+		padding: 40px 30px 30px;
+		box-sizing: border-box;
+		min-height: 0px;
+	}
+
+	@media only screen and (max-width: 767px)
+	{
+		box-shadow: none;
+		padding: 40px 30px 30px;
+		border-radius: 0px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		min-height: 0px;
+	}
+
+	@media all and (max-device-height: 668px)
+	{
+		padding: 20px 30px;
+	}
+
+	h1
+	{
+	  color: #FFFFFF;
+	  font-family: "Qualcomm-Semibold";
+	  font-size: 48px;
+	  letter-spacing: 0;
+	  line-height: 58px;
+	  text-align: center;
+	  font-weight: 500;
+
+	  @media only screen and (max-width: 768px)
+	  {
+	  	text-align: center;
+	  	margin-top: 30px;
+	  }
+
+	  @media only screen and (min-width: 768px) and (max-height: 900px)
+	  {
+	  	font-size: 36px;
+	  	line-height: 40px;
+	  	margin-bottom: 25px;
+	  }
+
+	  @media only screen and (max-width: 767px)
+	  {
+	  	font-size: 32px;
+	  	line-height: 42px;
+	  	margin-bottom: 25px;
+	  }
+
+	  	@media all and (max-device-height: 668px)
+		{
+			font-size: 28px;
+		  	line-height: 34px;
+		  	margin-bottom: 15px;
+		}
+	}
+
+	p
+	{
+	  color: #FFFFFF;
+	  font-family: "Qualcomm-Regular";
+	  font-size: 21px;
+	  letter-spacing: 0;
+	  line-height: 32px;
+	  text-align: center;
+
+	  @media only screen and (max-width: 767px)
+	  {
+	  	font-size: 15px;
+	  	line-height: 21px;
+	  	text-align: center;
+	  }
+
+	}
+
+	.Invisible
+	{
+		opacity: 0 !important;
+	}
+
+	.ModeChanger
+	{
+		cursor: pointer;
+		display: block;
+		background: #333;
+		height: 20px;
+		width: 20px;
+	}
+
+	.LandingSplash
+	{
+		width: 440px;
+		height: 480px;
+		margin: 20px auto;
+		position: relative;
+		max-width: 100%;
+		overflow: hidden;
+		
+		img
+		{
+			display: block;
+			width: 440px;
+			height: 400px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		
+		@media only screen and (min-width: 768px) and (max-height: 900px)
+		{
+			margin: 20px auto;
+			width: 375px;
+			height: 420px;
+		
+			img
+			{
+				width: 375px;
+				height: 340px;
+				margin: 0px auto
+			}
+		}
+
+		@media only screen and (max-width: 767px)
+		{
+			margin: 20px auto;
+			width: 375px;
+			height: 380px;
+
+			img
+			{
+				width: 375px;
+				height: 340px;
+				margin: 0px auto
+			}
+		}
+
+
+		@media only screen and (max-device-height: 668px)
+		{
+			width: 375px;
+			height: 340px;
+
+			img
+			{
+				width: 375px;
+				height: 340px;	
+				margin: 0px auto
+			}
+		}
+
+		@media only screen and (max-device-height: 600px)
+		{
+			width: 375px;
+			height: 340px;
+
+			img
+			{
+				width: 375px;
+				height: 340px;
+				margin: 0px auto
+			}
+		}	
+	}
+
+	.ModeChanger
+	{
+		border-radius: 14.5px;
+  		background-color: #557CE1;
+  		height: 29px;
+  		width: 52px;
+  		cursor: pointer;
+		display: block;
+		margin: 0px auto 10px;
+		position: relative;
+
+		span
+		{
+		  height: 25px;
+		  width: 25px;
+		  background-color: #3253DC;
+		  left: 2px;
+		  transform: translateY(-50%);
+		  top: 50%;
+		  display: block;
+		  position: absolute;
+		  border-radius: 12.5px;
+		  transition: all 0.3s ease;
+		}
+
+		&.On
+		{
+			background: #FFF;
+
+			span
+			{
+				left: auto;
+				right: 2px; 
+			}
+		}
+	}
+
+	h3
+	{
+	  font-family: "Qualcomm-Semibold";
+	  font-size: 13px;
+	  font-weight: 500;
+	  letter-spacing: 1px;
+	  line-height: 18px;
+	  text-align: center;
+	  text-transform: uppercase;
+	  margin-bottom: 25px;
+	}
+
+	button
+	{
+		
+		@media only screen and (max-width: 767px)
+		{
+			margin-top: 0px;
+			position: absolute;
+			bottom: 35px;
+			width: 300px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		
+		@media only screen and (max-device-height: 667px)
+		{
+			bottom: 20px;
+		}
+
+		@media only screen and (max-device-height: 600px)
+		{
+			bottom: 20px;
+		}
+	}
+}

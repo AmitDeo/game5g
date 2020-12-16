@@ -1,0 +1,79 @@
+.WrongScreen
+{
+	position: absolute;
+	width: 80%;
+	top: 10%;
+	height: 80%;
+	left: 0px;
+	background: transparent;
+  	z-index: 2;
+  	padding: 28px;
+  	text-indent: -9999px;
+  	cursor: pointer;
+  	animation: florish 1s ease-out forwards;
+
+	.WrongSign
+	{
+		width: 194px;
+		height: 194px;
+		display: block;
+		background: url('../../assets/images/incorrect_icon.png') 0 0 no-repeat transparent;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+
+	&.WrongDiminish
+	{
+		animation: diminish 1s ease-out forwards;
+	}
+
+}
+
+
+@keyframes florish
+{
+		0% {
+	    	transform: scale(0);
+	  	}
+
+	  	25%
+	  	{
+	  		transform: scale(0.4);	
+	  	}
+
+	  	75%
+	  	{
+	  		transform: scale(0.8);	
+	  	}
+
+	  	100%
+	  	{
+	  		transform: scale(1);
+	  	}
+}
+
+
+@keyframes diminish
+{
+		0% {
+	    	transform: scale(1);
+	  	}
+
+	  	25%
+	  	{
+	  		transform: scale(0.8);	
+	  	}
+
+	  	75%
+	  	{
+	  		transform: scale(0.4);	
+	  	}
+
+	  	100%
+	  	{
+	  		transform: scale(0);
+	  	}
+}

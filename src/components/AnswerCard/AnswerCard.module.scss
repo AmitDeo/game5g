@@ -1,0 +1,14 @@
+.Dragging
+{
+  border: 1px solid #2C4AC5 !important;
+  border-radius: 4px !important;
+  background-color: #2A48C3 !important;
+  box-shadow: inset -2px 2px 8px 0 rgba(27,47,129,0.38) !important;
+
+  > * 
+  {
+  	display: none !important;
+  }
+
+}
+

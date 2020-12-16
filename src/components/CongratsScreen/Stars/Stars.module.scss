@@ -1,0 +1,32 @@
+
+.Stars
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: block;
+	z-index: 1;
+	
+
+	&.xl
+	{
+		background: url('../../../assets/images/star_xl.png') 0 0 no-repeat transparent;
+		width: 74px;
+		height: 72px;
+	}
+
+	&.m
+	{
+		background: url('../../../assets/images/star_m.png') 0 0 no-repeat transparent;
+		width: 54px;
+		height: 53px;
+	}
+
+	&.xs
+	{
+		background: url('../../../assets/images/star_xs.png') 0 0 no-repeat transparent;
+		width: 34px;
+		height: 33px;
+	}
+
+}
